@@ -1,0 +1,133 @@
+
+/*spacers*/
+#spacerTop1{
+height: 40vh;
+}
+#spacerBottom1{
+height: 50vh;
+}
+#spacerBottom2{
+    height:70vh;
+}
+#spacerBottom3{
+    height: 80vh;
+}
+#spacerBottom4{
+    height: 20vh;
+}
+.genericSpacer{
+    height:10vh;
+}
+.smallSpacer{
+    height:1vh;
+}
+/*font colors*/
+h1{
+color: #6F2378;
+}
+/*styling for about*/
+#headshot{
+    border: none;
+    border-radius: 50%;
+    margin-left: 15%;
+}
+.aboutText{
+    margin-top: auto;
+}
+/*styling for portfolio*/
+.projectIMG{
+    display: inline !important;
+    padding-right: 2vh;
+}
+#portIcons{
+    margin-top:7vh;
+}
+#Portfolio{
+    font-size: 11vh;
+}
+.fiximg-circle{
+    border: none;
+    border-radius: 50%;
+}
+
+
+/*   Attempt at overlay text  height: 112px;
+    width: 140px; border none, border radius 50%*/
+.iconBox{
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 8vw;
+    position: relative;
+    height: 112px;
+    width: 140px;
+    border: none;
+    border-radius: 50%;
+}
+.iconBoxText{
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 12vw;
+    text-align: left;
+    visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+.iconBox:hover .iconBoxText{
+    visibility: visible;
+    opacity: 1;
+}
+.projectIMG:hover{
+    opacity: .2;
+}
+
+
+/*stying for connect and contact*/
+.ccFormat{
+    display: inline !important;
+}
+Ul{
+    list-style-type: none;
+}
+#connectUl{
+    margin:0;
+    padding: 0;;
+}
+.connectLI{
+    display: inline !important;
+    margin:0;
+    padding-right:1vw;
+}
+.connectLI a:hover{
+    opacity: 50%;
+}
+.img-circle{
+    height: 112px;
+    width: 140px;
+}
+#message{
+    height: auto;
+    width: auto;
+}
+.moveContact{
+    display: inline-block;
+    text-align: left;
+}
+#contactBreak{
+    line-height: -1vh;
+}
+/*nav bar styling*/
+.nav a{
+    color: #6F2378;
+    opacity: 50%;
+}
+.nav a:hover{
+    font-weight: bold;
+}
+.nav{
+position: fixed;
+right: 0;
+
+}
