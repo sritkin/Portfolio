@@ -25,6 +25,9 @@ height: 50vh;
 h1{
 color: #6F2378;
 }
+.bizFont{
+    color: #6F2378;
+}
 /*styling for about*/
 #headshot{
     border: none;
