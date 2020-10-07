@@ -28,7 +28,19 @@ color: #6F2378;
 .bizFont{
     color: #6F2378;
 }
+/*font colors for contact section specifically*/
+.bizFont textarea, input, ::placeholder{
+    color: #6F2378;
+}
+
 /*styling for about*/
+.section p{
+   /* color: #8e2b99;*/
+   color: rgb(22, 4, 4);
+}
+.section figcaption{
+    color: #6F2378;
+}
 #headshot{
     border: none;
     border-radius: 50%;
