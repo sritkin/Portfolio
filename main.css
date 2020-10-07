@@ -33,6 +33,15 @@ color: #6F2378;
     color: #6F2378;
 }
 
+/*I refuse to let chrome's autofill dictate my aesthetic - font colors continued*/
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active{
+    -webkit-box-shadow: none !important;
+    -webkit-text-fill-color: #6F2378;
+}
+input:-webkit-autofill{
+    -webkit-text-fill-color: #6F2378 !important;
+    }
+
 /*styling for about*/
 .section p{
    /* color: #8e2b99;*/
@@ -66,8 +75,7 @@ color: #6F2378;
 }
 
 
-/*   Attempt at overlay text  height: 112px;
-    width: 140px; border none, border radius 50%*/
+/*Hover text for portfolio icons */
 .iconBox{
     display: inline-block;
     vertical-align: top;
@@ -132,6 +140,11 @@ Ul{
 }
 #contactBreak{
     line-height: -1vh;
+}
+
+
+textarea{
+    border-color: #6F2378;
 }
 /*nav bar styling*/
 .nav a{
