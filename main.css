@@ -35,12 +35,15 @@ color: #6F2378;
 
 /*I refuse to let chrome's autofill dictate my aesthetic - font colors continued*/
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active{
-    -webkit-box-shadow: none !important;
+    box-shadow: 0 0 0 30px white inset !important;
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
     -webkit-text-fill-color: #6F2378;
+   
 }
 input:-webkit-autofill{
     -webkit-text-fill-color: #6F2378 !important;
     }
+
 
 /*styling for about*/
 .section p{
