@@ -148,6 +148,8 @@ Ul{
 
 textarea{
     border-color: #6F2378;
+    height: 12vh;
+    width: 35vw;
 }
 /*nav bar styling*/
 .nav a{
@@ -158,10 +160,9 @@ textarea{
     font-weight: bold;
 }
 .nav{
-position: fixed;
-right: 0;
 z-index: 1;
 }
+
 /*footer styling*/
 #footer{
     width: 100%;
@@ -174,3 +175,177 @@ z-index: 1;
     color: whitesmoke;
     margin-top: 1vh;
 }
+/*Mobile Responsiveness*/
+
+/* mobile browsers smaller than 481px larger than 360; (iphone)*/
+@media only screen and (min-width:361px) and (max-width: 480px) {
+    .full-height {
+        height: 100vh;
+        width: 98vw;
+    }
+    full-width{
+        width: 97vw !important;
+    }
+    .footer-height{
+        height: 6vh;
+    }
+    #footer p{
+        width: 100vw;
+        margin-top: -1vh !important;
+        margin-bottom: 6vh;
+        font-size: 2.2vh;
+    }
+    textarea{
+        height: 6em;
+        width: 65vw;
+    }
+    #Portfolio{
+        font-size: 6vh !important;
+    }
+    .vanish{
+        display: none;
+    }
+    .quarter-height{
+        height: 25vh;
+        width: 98vw;
+    }
+    .img-circle{
+        height: 15vh;
+        width: 25vw;
+    }
+    .iconBox{
+        margin-top: 3vh;
+    }
+
+}
+/*mobile browsers smaller than 361px(iphone 5/Galaxy S5/Moto G4)*/
+@media only screen and (max-width: 360px) {
+    .full-height {
+        height: 100vh;
+        width: 98vw;
+    }
+    full-width{
+        width: 97vw !important;
+    }
+    .footer-height{
+        height: 6vh;
+    }
+    #footer p{
+        width: 100vw;
+        margin-top: -1vh !important;
+        margin-bottom: 6vh;
+        font-size: 2.2vh;
+    }
+    textarea{
+        height: 6em;
+        width: 65vw;
+    }
+    #Portfolio{
+        font-size: 6vh !important;
+    }
+    .vanish{
+        display: none;
+    }
+    /*increasing spacer to make up for decreased screen size*/
+    .quarter-height{
+        height: 100vh;
+        width: 98vw;
+    }
+    .img-circle{
+        height: 15vh;
+        width: 25vw;
+    }
+    .iconBox{
+        margin-top: 3vh;
+    }
+
+}
+/*default iPad screens*/
+@media only screen and (device-width: 768px){
+    .full-height {
+        height: 110vh;
+        width: 98vw;
+    }
+    full-width{
+        width: 97vw !important;
+    }
+    .footer-height{
+        height: 6vh;
+    }
+    #footer p{
+        width: 100vw;
+        margin-top: -1vh !important;
+        margin-bottom: 6vh;
+        font-size: 2.2vh;
+    }
+    textarea{
+        height: 6em;
+        width: 40vw;
+    }
+    #Portfolio{
+        font-size: 6vh !important;
+    }
+    .quarter-height{
+        height: 30vh;
+        width: 98vw;
+    }
+    .img-circle{
+        height: 6vh;
+        width: 10vw;
+    }
+    .iconBox{
+        margin-top: 3vh;
+    }
+    #portIcons{
+        margin-top: -2vh;
+    }
+}
+
+/*default iPad Pro screens*/
+@media only screen and (device-width: 1024px){
+    .full-height {
+        height: 110vh;
+        width: 98vw;
+    }
+    full-width{
+        width: 97vw !important;
+    }
+    .footer-height{
+        height: 6vh;
+    }
+    #footer p{
+        width: 100vw;
+        margin-top: -1vh !important;
+        margin-bottom: 6vh;
+        font-size: 2.2vh;
+    }
+    textarea{
+        height: 6em;
+        width: 40vw;
+    }
+    #Portfolio{
+        font-size: 6vh !important;
+    }
+    .quarter-height{
+        height: 30vh;
+        width: 98vw;
+    }
+    .img-circle{
+        height: 6vh;
+        width: 10vw;
+    }
+    .iconBox{
+        margin-top: 3vh;
+        margin-left: -1.5vw;
+    }
+    #portIcons{
+        margin-top: -2vh;
+    }
+}
+
+/*Surface Duo tbd*/
+
+
+
+
+

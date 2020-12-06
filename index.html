@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sam's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
@@ -13,7 +14,7 @@
 <body>
 
     <!-- Nav Bar -->
-    <ul class="nav justify-content-end col-12">
+    <ul class="nav justify-content-end navbar fixed-top vanish">
         <li class="nav-item">
           <a class="nav-link" href="#About">About</a>
         </li>
@@ -28,7 +29,7 @@
           </li>
       </ul>
     <!-- Biz Card -->
-    <section class ="section">
+    <section class ="section full-height">
         <div class="header-content">
             <div class ="container">
                 <div class = "row"> <div id ="spacerTop1" ></div></div>
@@ -38,45 +39,46 @@
                         <h3 class="title-font bizFont";><em>Software Developer</em></h3>
                     </div>
                 </div>
-                <div class ="row"><div id ="spacerBottom1"></div></div>
+                <div class ="row full-height"><div id ="spacerBottom1"></div></div>
             </div>
         </div>
     </section>
 
     <!-- About -->
-    <section class="section">
+    <section class="section full-width">
         <div class="container">
             <div class ="row">
-                <div class ="col-7"></div>
-                <div class = "col-5"><h1 id="About"><b>ABOUT</b></h1></div>
+                <div class ="col-lg-7 col-md4 col-sm-2 col-xs-0"></div>
+                <div class = "col-lg-5 col-md-6 col-sm-10 col-xs-12"><h1 id="About"><b>ABOUT</b></h1></div>
             </div>
           <div class="row">
             <div class="aboutHeadshot col-lg-4 col-sm-12 col-md-6">
               <img src="portfolio_assets/headshot.jpg" id = "headshot">
-              <figcaption>Filler text if I want to put a quote or something here</figcaption>  
-              <figcaption>- Fake Person Who Says I'm great, <i>Fake job at Fake place</i></figcaption>
+              <figcaption>"I believe the most important thing is not trying to be better than others -
+                but better than myself."</figcaption>  
             </div>
-            <div class="aboutText col-lg-8 col sm-12 col-md-6">
-                <p class = "blockquote text-center">Filler about me text - we're on a clock here. "Words, words words" - Hamlet</p>
-                <p class = "blockquote text-center">This centered blockquote will probably look very pretty with actual words here. Here's where I'll put <a href="#" download="" ><b>My Resume</b></a> for some reason, after I write one. It was not made clear ahead of time that writing a resume was part of my coding homework so I didn't even attempt to schedule time for that. I didn't even fully read the instructions until today.</p>
-                <p class = "blockquote text-center">Oh look a new paragraph, how nice. I probably wrote some stuff. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore odit perspiciatis sunt deserunt numquam nisi modi doloremque at vero, suscipit excepturi dignissimos saepe dolorem incidunt qui consectetur voluptate molestiae eos!</p>
-                <p class = "blockquote text-center">Note here saying that I am the best potential employee of all time.</p>
+            <div class="aboutText col-lg-8 col sm-12 col-md-6 ">
+                <p class = "blockquote text-center">I am a .Net Developer with a primary focus on Back End projects.</p>
+                <p class = "blockquote text-center">I discovered my passion for coding the weird way - I took a job in IT Recruiting and started going to all the meetup events. I realized two things very quickly: I had no idea what anyone around me was saying and I needed to find out. I later enrolled in Eleven Fifty Academy's Software Development program to remedy that. </p>
+                <p class = "blockquote text-center">I built this site as a way to track my progress and provide links to the projects I am most proud off. The portfolio below will continue to grow as I complete projects of greater complexity. If you are interested in seeing my abilities and my approach to problem solving, I reccomend starting there.</p>
+                <p class = "blockquote text-center">If you are interested in a more in depth accounting of my professional career, you can view a copy of <a href="portfolio_assets/Sam Itkin Resume.pdf" target="blank" download >my resume here</a>, which is updated monthly.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <div class ="row"><div id ="spacerBottom2"></div></div>
+      <div class ="row quarter-height"><div id ="spacerBottom2"></div></div>
 
     <!-- Actual Portfolio Section -->
-<section>
+<section class="full-height">
     <div class = "container">
         <div class ="row">
-            <div class ="text-center col-12"><h1 id="Portfolio"><b>PORTFOLIO</b></h1></div>
+            <div class ="col-lg-3 col-md-1"></div>
+            <div class ="col-lg-9 col-md-11 col-sm-12 col-xs-12 shrink-to-fit"><h1 id="Portfolio"><b>PORTFOLIO</b></h1></div>
         </div>
         <div class ="genericSpacer"></div>
-        <div class = "row">
-            <div class ="col-8" id = portIcons>
+        <div class = "row ">
+            <div class ="col-lg-9 col-sm-6" id = portIcons>
                 <ul>
 
                 <div class = "iconBox">
@@ -99,17 +101,22 @@
                     <h5 class ="iconBoxText bizFont"><b>Gold Badge League</b></h5>
                     <p class ="iconBoxText bizFont">Console application challenges to test and display my current understanding and knowledge of C#. Pokemon themed for personal entertainment. Reccomend viewing README for navigation and updates. </p>
                 </div>
+                <div class = "iconBox">
+                    <li class="projectIMG"><a href="https://github.com/sritkin/MortgageHelperRedo" target="_blank"><img src="portfolio_assets/MortgageHelperIcon.jpg" class="img-circle fiximg-circle" alt="MortgageHelperMVC Github"></a></li>
+                    <h5 class ="iconBoxText bizFont"><b>Mortgage Helper MVC</b></h5>
+                    <p class ="iconBoxText bizFont"> Azure-hosted MVC designed for personal use as capstone project at Eleven Fifty. Database allows for ranking of properties and mortgage calculation to make home buying easier. Reccomend starting with the about page for context on project. </p>
+                </div>
                 </ul>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div id="skillsbox" class="card col-lg-3 col-sm-6" style="width: 18rem;">
                 <div class="card-header text-center bizFont">
-                  <b>Skills I probably Have</b>               
+                  <b>Skills</b>               
                 </div>
                 <ul class="list-group list-group-flush bizFont">
-                  <li class="list-group-item text-left">So many</li>
-                  <li class="list-group-item text-left">Probably very talented</li>
-                  <li class="list-group-item text-left">I'll figure out at what</li>
-                  <li class="list-group-item text-left">Later</li>
+                  <li class="list-group-item text-left">C#, Git, SQL</li>
+                  <li class="list-group-item text-left">HTML, CSS</li>
+                  <li class="list-group-item text-left">MongoDB, Python</li>
+                  <li class="list-group-item text-left">Agile Methodologies</li>
                 </ul>
               </div>
 
@@ -117,12 +124,12 @@
     </div>
 </section>
 
-<div class ="row"><div id ="spacerBottom3"></div></div>
+<div class ="row quarter-height"><div id ="spacerBottom3"></div></div>
 
     <!-- Connect and Contact Form-->
-    <div class="ccFormat container text-center">
+    <div class="ccFormat container text-center full-height">
         <div class="row">
-            <div class="col-12 col-sm-12 col-lg-6 col-md-4 col-xl-6 text-center">
+            <div class="col-sm-12 col-lg-6 col-md-4 col-xl-6 text-center">
                 <h1 id="Connect">Connect</h1>
                 <div class ="smallSpacer"></div><div class ="smallSpacer"></div><div class ="smallSpacer"></div>
                 <ul id = "connectUl">
@@ -132,14 +139,14 @@
                 </ul>
             </div>
 
-            <div class="col-12 col-sm-12 col-lg-6 col-md-8 col-xl-6">
+            <div class="col-sm-12 col-lg-6 col-md-8 col-xl-6">
                 <h1 id="Contact">Contact</h1>
                 <div class ="smallSpacer"></div>
                 <form class = "bizFont" action="https://formspree.io/f/mdopaaoq" method="POST">
                     <ul class="moveContact" id = "contactUL">
                     <li class = "bizFont"><label > <input type="text" style="border: 1px solid #6F2378;" name="_replyto" placeholder="Email" onfocus="this.placeholder =''" > </label></li>
                     <div class ="smallSpacer"></div>
-                    <li class = "bizFont"><label id="message" ><textarea rows=4 cols=60 name="message" placeholder="Type message here" onfocus="this.placeholder =''";></textarea> </label></li>
+                    <li class = "bizFont "><label id="message" ><textarea  name="message" placeholder="Type message here" onfocus="this.placeholder =''";></textarea> </label></li>
                     <div class ="smallSpacer"></div>
                     <li class = "bizFont"><button type="submit">Send</button></li>    
                 </ul>
@@ -152,7 +159,7 @@
 
     
     <!-- Footer - maybe -->
-<footer>
+<footer class="footer-height">
     <div class = "text-center" id ="footer"><p>Copyright © 2020: Samuel Itkin All Rights Reserved</p></div>
 </footer>
 
